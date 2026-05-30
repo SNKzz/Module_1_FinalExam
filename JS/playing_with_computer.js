@@ -1,15 +1,21 @@
 let table_caro = document.getElementById("table_caro");
-let input_row = document.getElementById("input_row");
-let input_col = document.getElementById("input_col");
+let h1_score_player = document.getElementById("h1_score_player");
+let h1_score_bot = document.getElementById("h1_score_bot");
+
+let score_player = 0;
+let score_bot = 0;
+
 let total_cell = 0;
 let array_caro_1 = [];
 let array_caro_2 = [];
 let turn = "person_turn";
 let count_turn = 0;
 
-function create_table() {
-  let quantity_row = +input_row.value;
-  let quantity_col = +input_col.value;
+window.onload = function create_table() {
+  let array_size_selected = sessionStorage.getItem("size").split("-");
+
+  let quantity_row = +array_size_selected[0];
+  let quantity_col = +array_size_selected[1];
   total_cell = quantity_col * quantity_row;
 
   let queri_create_table_caro = "";
@@ -27,7 +33,7 @@ function create_table() {
     queri_create_table_caro += `</tr>`;
   }
   table_caro.innerHTML = queri_create_table_caro;
-}
+};
 
 // Functions for checking to defense
 function check_5_points_row_defense(start, end, i) {
@@ -279,7 +285,7 @@ function click_cell_computer(idCell) {
   cell_clicked.innerText = "O";
   cell_clicked.style.color = "blue";
   array_caro_2[row_position][col_position].set_value("O");
-  check_win(array_caro_1, row_position, col_position);
+  check_win(array_caro_1, row_position, col_position, "computer");
   turn = "person_turn";
   count_turn++;
 
@@ -527,7 +533,7 @@ function click_cell_person(idCell) {
     cell_clicked.innerText = "X";
     cell_clicked.style.color = "red";
     array_caro_2[row_position][col_position].set_value("X");
-    check_win(array_caro_1, row_position, col_position);
+    check_win(array_caro_1, row_position, col_position, "computer");
     turn = "computer_turn";
     count_turn++;
     console.log(count_turn);

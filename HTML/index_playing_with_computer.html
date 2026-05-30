@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with Computer</title>
+    <link rel="stylesheet" href="../CSS/style_computer.css">
+    <script src="../JS/Class/Class_cell.js"></script>
+    <script src="../JS/Function/check_win.js"></script>
+    <script src="../JS/Function/action_when_win_computer.js"></script>
+    <script src="../JS/Function/back_to_menu.js"></script>
+</head>
+
+<body>
+    <text id="text_back_to_menu" onclick="back_to_menu()">◀️ Back to menu</text>
+    <div>
+        <img id="img_avatar_player" src="./Image/image_avatar_player.png">
+
+        <h1 id="h1_score_player">0</h1>
+        <h1>-</h1>
+        <h1 id="h1_score_bot">0</h1>
+
+        <img id="img_avatar_bot" src="./Image/image_avatar_computer.png">
+    </div>
+
+    <table id="table_caro" border="20" cellspacing="0" cellpadding="10"></table>
+
+
+</body>
+<script src="../JS/playing_with_computer.js"></script>
+
+</html>

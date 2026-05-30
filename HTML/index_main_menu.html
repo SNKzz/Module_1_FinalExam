@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game caro</title>
+    <link rel="stylesheet" href="../CSS/style_entry.css">
+</head>
+
+<body>
+    <fieldset>
+        <!-- <legend>Author: Do Ngoc Anh</legend> -->
+        <table>
+            <tr>
+                <th id="th_header_menu">Caro Game </th>
+            </tr>
+            <tr style="height: 30px;"></tr>
+            <tr>
+                <td id="td_img_intro_banner">
+                    <img id="img_banner" src="./Image/image_banner_carro.png">
+                </td>
+            </tr>
+            <tr style="height: 30px;"></tr>
+            <tr style="height: 20px;"></tr>
+            <tr id="th_header_size">
+                <th id="th_header_size">Mode</th>
+            </tr>
+            <tr>
+                <td id="td_select_size_table">
+                    <select id="select_mode">
+                        <option value="computer">Play with computer </option>
+                        <option value="person">Play with friend</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 30px;"></tr>
+            <tr id="th_header_size">
+                <th id="th_header_size">Size</th>
+            </tr>
+            <tr>
+                <td id="td_select_size_table">
+                    <select id="select_size_table">
+                        <option value="15-15">15 x 15</option>
+                        <option value="20-20">20 x 20</option>
+                        <option value="25-25">25 x 25</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 100px;"></tr>
+
+            <tr>
+                <td id="td_button_start">
+                    <button id="button_start" onclick="start_game()">Start</button>
+                </td>
+            </tr>
+        </table>
+        <div class="fake-legend">Creator: Đô Anh © 2026</div>
+    </fieldset>
+</body>
+
+</html>
+<script src="../JS/intro_screen.js"></script>

@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(210, 236, 239);
+}
+
+#text_back_to_menu {
+    font-size: 25px;
+    margin: 30px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+#text_back_to_menu:hover {
+    font-size: 25.2px;
+    margin: 30px;
+    font-family: fantasy;
+    font-weight: bold;
+    color: rgb(21, 112, 81);
+}
+
+div {
+    border-radius: 20px;
+    border-width: 1px;
+    width: 60vw;
+    height: 10vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+td {
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: white;
+}
+
+#img_avatar_player_X {
+    margin-left: 2vh;
+    height: 100%;
+    display: block;
+}
+
+#img_avatar_player_O {
+    margin-right: 2vh;
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 6vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+
+#h1_player_X {
+    margin-left: 1vw;
+    /* margin-top: 10px; */
+    font-size:2.5vh;
+    /* background-color:greenyellow; */
+    width: 100vh;
+    color: rgb(35, 194, 54);
+    height: 3vh;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy
+
+}
+
+#h1_player_O {
+    margin-right:1vw;
+    /* background-color: greenyellow; */
+    color: rgb(251, 249, 249);
+    font-size: 2.5vh;
+    width: 100vh;
+    height: 3vh;
+    padding: 40px;
+    text-align: center;
+    font-family:fantasy;
+}
+
+#h1_score_player_X {
+    font-size: 6vh;
+    color: red;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+
+#h1_score_player_O {
+    font-size: 6vh;
+    margin-right: 4vw;
+    margin-left: 2dvw;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}

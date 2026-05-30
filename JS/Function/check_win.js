@@ -457,26 +457,7 @@ function game_tie() {
   reset_game();
 }
 
-function action_when_win(array_position_scored) {
-  for (let i = 0; i < array_position_scored.length; i++) {
-    document.getElementById(array_position_scored[i]).style.backgroundColor =
-      "#2ecc71";
-  }
-  let value_cell = document.getElementById(array_position_scored[0]).innerText;
-  if (value_cell == "O") {
-    setTimeout(function () {
-      alert(`Bạn quá GÀ :((((( !!`);
-    }, 200);
-    reset_game();
-  } else {
-    setTimeout(function () {
-      alert(`Lạy bố đánh hay thế = )) !!`);
-    }, 200);
-    reset_game();
-  }
-}
-
-function check_win(array_caro_1, row_position, col_position) {
+function check_win(array_caro_1, row_position, col_position, type_of_game) {
   let array_position_win = [];
 
   if (check_row(array_caro_1, row_position, col_position) != false) {
@@ -502,6 +483,10 @@ function check_win(array_caro_1, row_position, col_position) {
   }
   console.log(array_position_win);
   if (array_position_win.length == 5) {
-    action_when_win(array_position_win);
+    if (type_of_game == "computer") {
+      action_when_win_computer(array_position_win);
+    } else {
+      action_when_win_friend(array_position_win);
+    }
   }
 }

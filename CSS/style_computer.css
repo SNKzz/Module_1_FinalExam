@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(215, 248, 251);
+}
+#text_back_to_menu {
+    font-size: 25px;
+    margin:30px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+#text_back_to_menu:hover {
+    font-size: 25.2px;
+    margin: 30px;
+    font-family: fantasy;
+    font-weight: bold;
+    color: rgb(21, 112, 81);
+}
+
+div {
+    border-radius: 20px         ;
+    border-color: rgb(142, 52, 52);
+    border-width: 1px;
+    width: 45vw;
+    height: 10vh;
+    margin: 0 auto;
+    /* margin-top: 5px; */
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+        justify-content: space-between;
+        /* Ép 2 avatar ra 2 đầu, tỉ số nằm giữa */
+        align-items: center;
+        /* Căn giữa tất cả theo chiều dọc */
+        box-sizing: border-box;
+}
+td {
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: white;
+}
+
+#img_avatar_player {
+    margin-top: 1px;
+    height: 95%;   
+    margin-left: 150px;
+    display: block;
+}
+
+#img_avatar_bot {
+    margin-right: 150px;
+    height: 90%;
+    width: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 6vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+
+#h1_score_player {
+    font-size: 6vh;
+    color: red;
+    margin-left: 5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+
+#h1_score_bot {
+    font-size: 6vh;
+    margin-right: 5vw;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
