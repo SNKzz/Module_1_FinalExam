@@ -8,8 +8,8 @@ function start_game() {
   sessionStorage.setItem("size", selected_size);
 
   if (selected_mode == "computer") {
-    window.location.href = "index_playing_with_computer.html";
+    window.location.href = "../HTML/index_playing_with_computer.html";
   } else if (selected_mode == "person") {
-    window.location.href = "index_playing_with_friend.html";
+    window.location.href = "../html/index_playing_with_friend.html";
   }
 }
