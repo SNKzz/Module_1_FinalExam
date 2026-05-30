@@ -10,6 +10,6 @@ function start_game() {
   if (selected_mode == "computer") {
     window.location.href = "../HTML/index_playing_with_computer.html";
   } else if (selected_mode == "person") {
-    window.location.href = "../html/index_playing_with_friend.html";
+    window.location.href = "../HTML/index_playing_with_friend.html";
   }
 }
